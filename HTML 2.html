@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Electronics Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-filters">
+            <h2>Filters</h2>
+            <label for="category">Category:</label>
+            <select id="category" onchange="filterProducts()">
+                <option value="all">All</option>
+                <option value="mobiles">Mobiles</option>
+                <option value="laptops">Laptops</option>
+                <option value="accessories">Accessories</option>
+            </select>
+        </section>
+
+        <section class="products" id="product-list">
+            <h2>Products</h2>
+            <!-- Product Cards go here -->
+            <div class="product-card" data-category="mobiles">
+                <img src="mobile.jpg" alt="Mobile Phone">
+                <h3>Smartphone</h3>
+                <p>$499</p>
+                <a href="product-detail.html">View Details</a>
+            </div>
+
+            <div class="product-card" data-category="laptops">
+                <img src="laptop.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>$999</p>
+                <a href="product-detail.html">View Details</a>
+            </div>
+
+            <div class="product-card" data-category="accessories">
+                <img src="headphone.jpg" alt="Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>$199</p>
+                <a href="product-detail.html">View Details</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Electronics Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
